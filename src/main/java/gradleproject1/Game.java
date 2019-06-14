@@ -79,7 +79,7 @@ public class Game {
   private void won() {
     // you won
     drawScreen();
-    System.out.print("\u001b[J" + "Congratulations you won! Play again? ");
+    System.out.print("\u001b[J\u009b38;5;2m" + "Congratulations you won! Play again? ");
     if (readLine.readLine().substring(0, 1).toUpperCase().equals("Y")) {
       Game game = new Game();
     }
@@ -89,7 +89,7 @@ public class Game {
     // you lost
     wordLetters.forEach(l -> l.correct = true);
     drawScreen();
-    System.out.print("\u001b[J" + "Sorry, you lost Play again? ");
+    System.out.print("\u001b[J\u009b38;5;1m" + "Sorry, you lost Play again? ");
     if (readLine.readLine().substring(0, 1).toUpperCase().equals("Y")) {
       Game game = new Game();
     }
