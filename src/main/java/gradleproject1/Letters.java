@@ -16,7 +16,9 @@ public class Letters {
 
   public Letters(String s) {
     letter = s;
-    if (s.matches("[ .'?!,&-]")) correct = true;
+    if (s.matches("[EASTR .'?!,&-]")) {
+      correct = true;
+    }
   }
 
   public Letters(String s, boolean b) {

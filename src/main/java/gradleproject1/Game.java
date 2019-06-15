@@ -33,6 +33,7 @@ public class Game {
   private boolean test = false;
   private List<Letters> gallows = new ArrayList<Letters>();
   private Random rand = new Random();
+  private PhraseDatabase db = new PhraseDatabase();
 
   public void game() {
     this.init();
